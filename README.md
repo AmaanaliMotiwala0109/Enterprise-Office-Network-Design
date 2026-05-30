@@ -64,6 +64,7 @@ This project simulates a real-world enterprise office network for a company with
 
 ### 1. Router0 — Cisco 2811 (DHCP)
 
+```bash
 enable
 configure terminal
 hostname Router0
@@ -114,7 +115,8 @@ end
 write memory
 ```
 ### 2. CORE-SW — Multilayer Switch0 (Cisco 3650 + ACL)
-```
+
+```bash
 enable
 configure terminal
 hostname CORE-SW
@@ -177,9 +179,11 @@ end
 write memory
 ```
 
+---
 
 ### 3. SW-HR — Switch0 (VLAN 10)
-```
+
+```bash
 enable
 configure terminal
 hostname SW-HR
@@ -214,7 +218,7 @@ write memory
 
 ### 4. SW-IT — Switch1 (VLAN 20)
 
-```
+```bash
 enable
 configure terminal
 hostname SW-IT
@@ -249,7 +253,7 @@ write memory
 
 ### 5. SW-SALES — Switch2 (VLAN 30)
 
-```
+```bash
 enable
 configure terminal
 hostname SW-SALES
@@ -284,7 +288,7 @@ write memory
 
 ### 6. SW-FINANCE — Switch3 (VLAN 40)
 
-```
+```bash
 enable
 configure terminal
 hostname SW-FINANCE
@@ -321,7 +325,7 @@ write memory
 
 ## ✅ Verification Commands
 
-```
+```bash
 ! ── On Core Switch ──
 show ip interface brief       ! Check all SVIs are up
 show vlan brief               ! Confirm VLANs exist
@@ -345,19 +349,14 @@ ping 192.168.40.11            ! HR → Finance (should FAIL due to ACL)
 ---
 
 ## 🛠️ Tools & Technologies
-```
 
  Cisco Packet Tracer 8.x | Network simulation |
- 
  Cisco 3650-24PS | Inter-VLAN Routing + ACL Enforcement |
- 
  Cisco 2960-24TT | Access Layer Switches |
- 
  Cisco 2811 Router | DHCP Server |
- 
  SSH | Secure remote management |
- 
  802.1Q Trunking | VLAN tagging between switches |
+
 ---
 
 ## 🚀 How to Run
@@ -375,7 +374,7 @@ ping 192.168.40.11            ! HR → Finance (should FAIL due to ACL)
 
 ## 📂 File Structure
 
-``
+```
 Enterprise-Office-Network-Design/
 │
 ├── network_VLAN_congiguration_in_Cisco_Packet_Tracer.pkt
@@ -389,5 +388,6 @@ Enterprise-Office-Network-Design/
 
 This project is built for educational and academic purposes.
 
+---
 
 > Made with 💙 by [AmaanaliMotiwala0109](https://github.com/AmaanaliMotiwala0109) & [Vedantp29](https://github.com/Vedantp29)
