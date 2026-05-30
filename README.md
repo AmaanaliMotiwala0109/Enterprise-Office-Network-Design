@@ -40,9 +40,9 @@ This project simulates a real-world enterprise office network for a company with
 |------------------|-------------------|--------------------|--------------|
 | Gi1/0/1          | Router0           | —                  | 10,20,30,40  |
 | Gi1/0/2          | Switch0 (HR)      | Fa0/1              | 10           |
-| Gi1/0/3          | Switch1 (IT)      | Fa0/3              | 20           |
-| Gi1/0/4          | Switch2 (Sales)   | Fa0/3              | 30           |
-| Gi1/0/5          | Switch3 (Finance) | Fa0/4              | 40           |
+| Gi1/0/3          | Switch1 (IT)      | Fa0/1              | 20           |
+| Gi1/0/4          | Switch2 (Sales)   | Fa0/1              | 30           |
+| Gi1/0/5          | Switch3 (Finance) | Fa0/1              | 40           |
 
 ---
 
