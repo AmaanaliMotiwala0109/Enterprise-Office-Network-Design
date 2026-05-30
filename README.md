@@ -170,7 +170,8 @@ ip domain-name company.local
 
  interface vlan 10
     ip access-group BLOCK_HR_TO_FINANCE in    
-crypto key generate rsa modulus 2048
+crypto key generate rsa
+2048(SIZE)
 username admin privilege 15 secret StrongPass123
 line vty 0 4
  login local
@@ -202,7 +203,8 @@ interface range fa0/2 - 4
  switchport port-security mac-address sticky
  no shutdown
 ip domain-name company.local
-crypto key generate rsa modulus 2048
+crypto key generate rsa
+2048(SIZE)
 username admin privilege 15 secret StrongPass123
 line vty 0 4
  login local
@@ -237,7 +239,8 @@ interface range fa0/2 - 3
  switchport port-security mac-address sticky
  no shutdown
 ip domain-name company.local
-crypto key generate rsa modulus 2048
+crypto key generate rsa
+2048(SIZE)
 username admin privilege 15 secret StrongPass123
 line vty 0 4
  login local
@@ -272,7 +275,8 @@ interface range fa0/2-3
  switchport port-security mac-address sticky
  no shutdown
 ip domain-name company.local
-crypto key generate rsa modulus 2048
+crypto key generate rsa
+2048(SIZE)
 username admin privilege 15 secret StrongPass123
 line vty 0 4
  login local
@@ -307,7 +311,8 @@ interface range fa0/2 - 4
  switchport port-security mac-address sticky
  no shutdown
 ip domain-name company.local
-crypto key generate rsa modulus 2048
+crypto key generate rsa
+2048(SIZE)
 username admin privilege 15 secret StrongPass123
 line vty 0 4
  login local
