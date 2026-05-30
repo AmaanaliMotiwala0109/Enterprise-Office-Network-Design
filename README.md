@@ -351,10 +351,15 @@ ping 192.168.40.11            ! HR → Finance (should FAIL due to ACL)
 ## 🛠️ Tools & Technologies
 
  Cisco Packet Tracer 8.x | Network simulation |
+ 
  Cisco 3650-24PS | Inter-VLAN Routing + ACL Enforcement |
+ 
  Cisco 2960-24TT | Access Layer Switches |
+ 
  Cisco 2811 Router | DHCP Server |
+ 
  SSH | Secure remote management |
+ 
  802.1Q Trunking | VLAN tagging between switches |
 
 ---
